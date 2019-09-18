@@ -54,7 +54,7 @@
         android:layout_marginTop="31dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
-        android:text="Tak for at du trykkede! - test"
+        android:text="Tag chancen og prøv at tryk på ovenstående knap"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="292dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="32dp"
+        android:text="Spørgsmålet er: hvorfor bruger man ikke et eksplicit intent til at åbne f.eks. browseren? "
+        android:textColor="#191D19"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="398dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="353dp"
+        android:text='Svar: man bruger ikke et eksplicit intent til at åbne f.eks. browsere, fordi udvikleren bag programmet har en idé om, hvad programmet skal kunne.  F.eks. har udvikleren ved eksplicit intent fastlagt aktiviteternes "rækkefølge". F.eks. hvis man skal fra aktivitet 1 til aktivitet 2 i en applikation.  Og grunden til at man ikke anvender dette, når man åbner en browser, skyldes at brugeren kan have behov for at hoppe fra en aktivitet til en anden ved at klikke på et link. Hvis f.eks. brugeren vælger at trykke på et link (en video, maps-placering og mv.) på en hjemmeside/app, og det smider brugeren over på en anden hjemmeside/app, så kan man sige, at der anvendes implicit intent. '
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
