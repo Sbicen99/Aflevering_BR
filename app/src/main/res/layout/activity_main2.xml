@@ -6,68 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
-    <Button
-        android:id="@+id/minKnap3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginRight="152dp"
-        android:layout_marginBottom="27dp"
-        android:text="Se svaret"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="381dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:text="Hvorfor bruger man implicit intent i stedet for eksplicit intent til at åbne browsere?"
-        android:textColor="#121312"
-        android:textColorLink="#E91E63"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wb" />
-
     <WebView
         android:id="@+id/wb"
-        android:layout_width="396dp"
-        android:layout_height="256dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_width="393dp"
+        android:layout_height="444dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="382dp"
-        android:layout_height="186dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="102dp"
-        android:text='Svar: man bruger ikke et eksplicit intent til at åbne f.eks. browsere, fordi udvikleren bag programmet har en idé om, hvad programmet skal kunne.  F.eks. har udvikleren ved eksplicit intent fastlagt aktiviteternes "rækkefølge". F.eks. hvis man skal fra aktivitet 1 til aktivitet 2 i en applikation.  Og grunden til at man ikke anvender dette, når man åbner en browser, skyldes at brugeren kan have behov for at hoppe fra en aktivitet til en anden ved at klikke på et link. Hvis f.eks. brugeren vælger at trykke på et link (en video, maps-placering og mv.) på en hjemmeside/app, og det smider brugeren over på en anden hjemmeside/app, så kan man sige, at der anvendes implicit intent. '
-        android:textColor="#6B6A6A"
+        android:id="@+id/textView4"
+        android:layout_width="286dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:text="Du kan også se mine svar på de spørgsmål, vi fik stillet under øvelserne. Bare tryk på knappen"
         android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wb" />
+
+    <Button
+        android:id="@+id/minKnap3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="166dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginRight="157dp"
+        android:layout_marginBottom="72dp"
+        android:text="Svar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.565" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
